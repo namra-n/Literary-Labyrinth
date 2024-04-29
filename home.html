@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Literary Labyrinth - Your Reading Buddy</title>
+    <link rel="stylesheet" href="style.css" />
+        
+</head>
+<body>
+    <div class="search-container">
+        <input type="text" placeholder="Search by title..." id="searchInput">
+        <button type="button" onclick="searchBooks()">Search</button>
+    </div>
+    <div class="login-container">
+        <button onclick="redirectToSignUp()">Login/Signup</button>
+    </div>
+<div id="logo-container">
+    <img id="logo" src="Logo3 (2).png" alt="Logo" class="fadeIn" height="50px" width="50px">
+    <span class="website-name"></br>Literary Labyrinth</br>
+    <span class="custom-font">Your Reading Buddy</span>
+</div>
+<div class="navbar fadeIn">
+    <a href="#" onclick="showAll()">All Books</a>
+    <a href="#" onclick="showFiction()">Fiction</a>
+    <a href="#" onclick="showNonFiction()">Non-Fiction</a>
+</div>
+<div class="recommned_container">
+    <button onclick="redirectToRecommend()">Recommend Books</button>
+</div>
+
+<h1>Top Picks Of The Day!</h1>
+   
+    
+    
+    <div class="container fadeIn" id="bookContainer">
+        <div class="book fiction" onclick="toggleDescription(this)">
+            <img src="Book1.jpg" alt="The Midnight Library by Matt Haig" class="img-thumbnail">
+            <h2>The Midnight Library <em> by Matt Haig</em></h2>
+            <div class="book-description">
+                <p>"The Midnight Library" by Matt Haig is a thought-provoking and heartwarming novel 
+                that follows the story of Nora Seed, a woman who finds herself in a mysterious 
+                library between life and death. In this library, 
+                each book on the shelves represents a different version of her life, 
+                showcasing the various choices she could have made and the paths she could have taken. </p>
+            </div>
+        </div>
+    
+        <div class="book fiction" onclick="toggleDescription(this)">
+            <img src="Book2.jpg" alt="The Book Thief"class="img-thumbnail">
+            <h2>The Book Thief <em>by Markus Zusak</em></h2>
+            <div class="book-description">
+                <p>
+                    "The Book Thief" by Markus Zusak is a poignant novel set in Nazi Germany, narrated by Death. 
+                    It follows the life of Liesel Meminger, a young girl living with a foster family, 
+                    who discovers solace and escape through stealing books. As she navigates the challenges of her time,
+                     Liesel forms deep connections and experiences the transformative power of words. </p>
+            </div>
+        </div>
+    
+        <div class="book non-fiction" onclick="toggleDescription(this)">
+            <img src="Book3.jpg" alt="Diary of a Young Girl" class="img-thumbnail">
+            <h2>Diary of a Young Girl <em>by Anne Frank</em></h2>
+            <div class="book-description">
+                <p>"Diary of a Young Girl" is the poignant and powerful diary of Anne Frank, 
+                    a Jewish girl in hiding during the Holocaust. Written between 1942 and 1944,
+                     Anne's diary captures her thoughts, fears, and dreams while living in hiding with her family. 
+                     The diary provides an intimate perspective on the challenges of life in hiding and the 
+                     profound impact of war on an individual's hopes and aspirations.</p>
+            </div>
+        </div>
+    
+        <div class="book non-fiction" onclick="toggleDescription(this)">
+            <img src="Book4.jpg" alt="The Theory Of Everything" class="img-thumbnail">
+            <h2>The Theory Of Everything<em> by Stephen Hawking</em></h2>
+            <div class="book-description">
+                <p>The book the "theory of everything" is written by Stephen Hawking. 
+                    This book is mostly about Cosmology. This book is comprised of seven lectures, 
+                    these lectures are on the creation and the fate of the universe, Black holes, 
+                    direction of time, and the theory of everything</p>
+            </div>
+        </div>
+
+        
+
+        
+        <div class="book fiction" onclick="toggleDescription(this)">
+        <div class="more-link">
+            <a href="https://www.goodreads.com/genres/fiction">More Fiction</a>
+        </div>
+        </div>
+
+        <div class="book non-fiction" onclick="toggleDescription(this)">
+        <div class="more-link">
+            <a href="https://www.goodreads.com/genres/non-fiction">More Non-Fiction</a> 
+        </div>
+    </div>
+    </div>
+
+    
+    <footer id="footer">
+        <p><b>Contact us at:</b> <br> 📧 literarylabyrinth@gmail.com <br> ☎️ 123-456-7890</br>Follow us on <a href="https://www.instagram.com/literarylabyrinth_ig?igsh=NDhlMmNrMjdtanR1" id = "insta">Instagram</a></p>
+    </footer>
+    <script src="script.js"></script>
+    </body>
+    </html

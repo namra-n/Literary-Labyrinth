@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Book Recommendation System</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      background-image: url("bg_new1.jpg");
+    }
+
+    #format {
+      text-align: center;
+      margin-top: 230px;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 30px;
+      color: rgb(255, 255, 255);
+    }
+
+    input {
+      height: 25px;
+      width: 150px;
+      font-family: 'Times New Roman', Times, serif;
+      border-radius: 10px;
+    }
+
+    button {
+      height: 30px;
+      width: 150px;
+      font-family: 'Times New Roman', Times, serif;
+      border-radius: 10px;
+      font-size: 15px;
+      color: black;
+      background-color: rgb(157, 157, 223);
+    }
+  </style>
+</head>
+<body>
+  <br><br>
+  <h1>Welcome to Book Recommendation System!</h1>
+  <div id = 'format'>
+  <p><b>Find books you might enjoy based on your interests!<b></p>
+  <form action="http://127.0.0.1:5000/" method="get">
+    <label for="user_input"><b>Enter a book title or author:<b></label>
+    <input type="text" id="user_input" name="user_input">
+    <button type="submit">Recommend Books</button>
+  </div>
+  </form>
+</body>
+<script>
+  function validateForm() {
+    var userInput = document.getElementById("user_input").value;
+    if (userInput.trim() === "") {
+      alert("Please enter a book title or author!");
+      return false; 
+    }
+    return true; // allow form submission
+  }
+</script>
+</html>

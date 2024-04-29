@@ -1,0 +1,227 @@
+body {
+    position: relative;
+    font-family: Arial, sans-serif;
+    background: url('peakpx.jpg') no-repeat center center fixed;
+    background-size: cover;
+    background-blend-mode: lighten;
+    color: #fff;
+}
+
+  
+
+.website-name {
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.custom-font
+{
+    font-size: 15px ;
+    font-family:serif;
+    animation: flash 1s infinite alternate;
+    font-style: italic;
+}
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    display: grid;
+    grid-gap: 20px;
+}
+
+h1 {
+    background-color: rgb(69, 101, 172);
+    text-align: center;
+    padding :0;
+    color: whitesmoke;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom:auto;
+    font-size: 2rem;
+    text-shadow: 2px 2px 4px #333(0, 0, 0, 0.5);
+    animation: flash 1s infinite alternate;
+}
+h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+@keyframes flash {
+0% {
+    color: silver;
+}
+
+100% {
+    color: goldenrod ;
+}
+}
+.book {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+.book:hover {
+    transform: translateY(-5px);
+}
+.book img {
+    width: 100px;
+    height: 100px;
+
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+.book h2 {
+    margin-top: 0;
+    color: #333;
+    font-size: 1.2rem;
+    text-align: center;
+}
+.book p {
+    color: #333;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.book-description {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.9);;
+    padding: 20px;
+    border-radius: 5px;
+    display: none;
+    z-index: 1;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+.fadeIn {
+    animation: fadeIn 1s ease-in-out;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+    h1 {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+}
+#logo-container {
+    text-align: left;
+}
+
+#logo {
+    display: inline-block;
+    max-width: 300px;
+}
+
+
+#thumbnail {
+    width: =200px;
+    align: center;
+}
+
+footer {
+    color: rgb(206, 184, 184);
+    padding: 20px;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.navbar {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.navbar a {
+    color: black;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: rgb(248, 245, 245);
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+.navbar a:hover {
+    background-color: lightblue;
+}
+
+.search-container {
+    float: right;
+    margin-right: 20px;
+}
+
+.search-container input[type=text] {
+    padding: 10px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+    border-radius: 5px;
+}
+
+.search-container button {
+    float: right;
+    padding: 10px 15px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.search-container button:hover {
+    background: #ccc;
+}
+
+.more-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#footer {
+ 
+  width: 100%;
+   height: 2.5rem; 
+   margin-bottom: 50px;
+   padding: 0;          
+}
+
+#insta {
+    color: lightblue;
+}
+
+.login-container {
+    float: right;
+    margin-right: 5px;
+}
+
+.login-container button {
+    float: right;
+    padding: 10px 10px;
+    margin-top: 8px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.login-container button:hover{
+    background: #ccc;
+}

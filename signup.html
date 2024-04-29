@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up</title>
+    <style>
+        body {
+            background-image: url("./bg_new2.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: white;
+        }
+
+        h1 {
+            font-family: "Merriweather", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        label {
+            margin-right: 150px;
+        }
+
+        input {
+            border-radius: 20px;
+            font-size: 15px;
+            padding: 5px;
+            height: 10px;
+            width: 200px;
+            border: black 1px solid;
+        }
+
+        #webpage {
+            font-size: 30px;
+        }
+
+        button {
+            border-radius: 20px;
+            margin-right: 42px;
+            border: black 1px solid;
+            height: 20px;
+            width: 150px;
+        }
+
+        button:hover {
+            background-color: #5a75ac;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        #forgotpass {
+            color: #b0d4de;
+            font-size: 13px;
+        }
+
+        #forgotpass:hover {
+            color: #cec4c4;
+            cursor: pointer;
+        }
+
+        #terms {
+            font-size: 14px;
+        }
+
+        center {
+            margin-top: 68px;
+        }
+
+        label {
+            font-size: 15px;
+        }
+
+        #service {
+            color: rgb(157, 105, 157);
+        }
+
+        .a-box .a-divider.a-divider-break:after,
+        .a-color-base-background .a-divider.a-divider-break:after,
+        .a-divider.a-divider-break:after {
+            content: "";
+            width: 30%;
+            margin-left: 350px;
+            background-color: transparent;
+            display: block;
+            height: 1px;
+            border-top: .1rem solid #767676;
+            position: absolute;
+            top: 50%;
+            margin-top: -1px;
+            z-index: 1;
+        }
+
+        .a-box .a-divider.a-divider-break,
+        .a-color-base-background .a-divider.a-divider-break,
+        .a-divider.a-divider-break {
+            text-align: center;
+            position: relative;
+            top: 2px;
+            padding-top: 1px;
+            margin-bottom: 14px;
+            line-height: 0;
+        }
+
+        .a-divider .a-divider-break {
+            width: 8px;
+        }
+
+        div {
+            display: block;
+            unicode-bidi: isolate;
+        }
+
+        #signup {
+            margin-right: 0px;
+        }
+
+        footer {
+            margin-top: 45px;
+            text-align: center;
+            font-size: 12px;
+        }
+
+        #pass {
+            padding: 10px;
+            font-size: 10px;
+            height: 1px;
+            margin-right: -5px;
+        }
+
+        #pass2 {
+            margin-right: 100px;
+        }
+
+        #email {
+            margin-right: 170px;
+        }
+
+        #logocover {
+            font-size: 10px;
+            margin-left: -900px;
+            margin-top: -45px;
+        }
+
+        .already {
+            width: 40%;
+        }
+
+        #al {
+            color: rgb(158, 90, 158);
+        }
+
+        #create {
+            width: 205px;
+            margin-right: 5px;
+        }
+
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Tilt+Neon&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="content">
+        <center>
+            <div id="logocover">
+                <img src="Logo3 (2).png" height=35px width=35px><br>
+                <p>Literary Labyrinth</p>
+            </div>
+            <h1 id="webpage">Create Account</h1> &nbsp;&nbsp;&nbsp;
+            <label id="name">Your Name</label><br>
+            <input type="text" name="name" required="">
+            <br>
+            <br>
+            <label id="email">Email</label><br>
+            <input type="text" name="username" required="">
+            <br>
+            <br>
+            <label>Password</h3></label><br>
+            <input id = "pass" type="password" name="password" placeholder = "Atleast 8 characters" required="">
+            <br>
+            <br>
+            <label id="pass2">Re-enter password</h3></label><br>
+            <input type="password" name="password" required="">
+            <br>
+            <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <br>
+            <button id = "create" type="submit" name="submit" value="Login" onclick="redirectToHome()"
+                class="btn btn-lg btn-primary btn-block">Create account
+            </button>
+            <br><br>
+            <p id="terms">By creating an account, you agree to the<br> Literary Labyrinth's <a id="service" href>Terms of Service</a>
+                and<br> <a id="service" href>Privacy Policy</a></p>
+            <br>
+
+            <hr class = "already">
+            <p id = "already">Already have an account? <a id = "al" href = "login.html">Sign in</a></p>
+        </center>
+
+        <script>
+            function redirectToHome() {
+                window.location.href = "home.html";
+            }
+
+            function redirectToSignUp() {
+                window.location.href = "signup.html";
+            } 
+        </script>
+
+    </div>
+    <footer class="copyright">
+        Copyrights © 2024 LITERARY LABYRINTH. All rights reserved.
+    </footer>
+</body>
+
+</html>
